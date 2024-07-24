@@ -1,0 +1,36 @@
+ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 4rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+
+    font-size: 1.25rem;
+}
+
+a {
+
+    text-decoration: none;
+    color: black;
+
+    transition: scale 0.25s, transform 0.25s;
+
+    will-change: transform;
+
+}
+
+a:hover {
+
+    scale: 1.05;
+    transform: translateY(-2%);
+
+}
+
+.nav-links {
+
+    display: flex;
+    gap: 1.5rem;
+
+}

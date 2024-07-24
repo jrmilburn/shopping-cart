@@ -1,0 +1,19 @@
+.shopping-cart{
+
+}
+
+div.item-counter{
+
+    position: absolute;
+    font-size: 0.9rem;
+    font-weight: bold;
+    /*border: 0.125em solid rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;*/
+    width: 1em;
+    aspect-ratio: 1;
+    text-align: center;
+
+    transform: translate(50%, -300%);
+
+}
