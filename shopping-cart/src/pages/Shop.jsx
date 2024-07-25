@@ -4,25 +4,34 @@ import Card from "./components/item-card"
 import styles from './Shop.module.css'
 import { v4 as uuidv4 } from 'uuid';
 
-export default function Shop( { clickFunction, items } ) {
+export default function Shop( { clickFunction, items, isLoading } ) {
 
     return (
 
         <> 
-            <div className={styles["cards"]}>
-            {items.length > 0 ? (
-                items.map(item => (
-                    <Card 
-                        key={uuidv4()}  // Assuming item has an id property for the key
-                        itemProperties={item}
-                        clickFunction={clickFunction}
-                        isCheckout={false}
-                    />
-                ))
+
+            {isLoading ? (
+                <div className={styles["loading"]}>
+                    <h2>Loading...</h2>
+                </div>
             ) : (
-                null  // Or a fallback UI if desired
+                <div className={styles["cards"]}>
+                {items.length > 0 ? (
+                    items.map(item => (
+                        <Card 
+                            key={uuidv4()}  // Assuming item has an id property for the key
+                            itemProperties={item}
+                            clickFunction={clickFunction}
+                            isCheckout={false}
+                        />
+                    ))
+                ) : (
+                    null  // Or a fallback UI if desired
+                )}
+                </div>
             )}
-            </div>
+
+
             
         </>
 

@@ -44,7 +44,7 @@ function App() {
     createRoutesFromElements(
       <Route path='/' element={<Root cartitems={cartItems}/>}>
         <Route index element={<HomePage />}/>
-        <Route path='shop' element={<Shop clickFunction={handleClick} items={shopItems}/>}/>
+        <Route path='shop' element={<Shop clickFunction={handleClick} items={shopItems} isLoading={isLoading}/>}/>
         <Route path='checkout' element={<Checkout items={cartItems}/>} />
       </Route>
     )
