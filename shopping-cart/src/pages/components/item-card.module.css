@@ -18,6 +18,19 @@
 
 }
 
+.card-checkout {
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 0.25rem;
+    padding: 1rem;
+}
+
+
 .card h2 {
 
     font-size: 1rem;
@@ -47,9 +60,9 @@ img {
 
 }
 
-.add-to-cart input {
-    width: 2ch;
-
+.add-to-cart p {
+    position: absolute;
+    transform: translate(1000%, -90%);
 }
 
 .add-to-cart button {

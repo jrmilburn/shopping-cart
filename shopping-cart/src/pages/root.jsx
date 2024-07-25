@@ -3,7 +3,7 @@ import styles from './root.module.css'
 import ShoppingCart from "./ShoppingCart";
 import { useState } from "react";
 
-export default function Root( { shoppingitems } ) {
+export default function Root( { cartitems } ) {
 
     return(
 
@@ -19,9 +19,9 @@ export default function Root( { shoppingitems } ) {
                             Shop
                     </NavLink>
                 </div>
-                <NavLink>
+                <NavLink to='checkout'>
                     <ShoppingCart 
-                        shoppingitems={shoppingitems}/>
+                        cartitems={cartitems.length}/>
                 </NavLink>
             </ul>
             <div>
