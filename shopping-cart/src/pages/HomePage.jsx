@@ -1,5 +1,23 @@
-export default function HomePage() {
+import styles from './HomePage.module.css'
 
-    return <h1>Hello world!</h1>
+import { NavLink } from 'react-router-dom'
+
+import Card from './components/item-card'
+
+export default function HomePage({ clickFunction, items }) {
+
+    return (
+
+        <div className={styles["home"]}>
+            <div className={styles["title"]}>
+                <h1>Welcome to the Outlet!</h1>
+                <p>Where high fashion meets low prices</p>
+            </div>
+            <hr />
+            <button className={styles['home-btn']}><NavLink to='shop'>SHOP NOW</NavLink></button>
+
+        </div>
+
+    )
 
 }

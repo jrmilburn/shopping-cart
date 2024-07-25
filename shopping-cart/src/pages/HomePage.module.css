@@ -1,0 +1,34 @@
+.title {
+
+}
+
+.home {
+
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.home-btn {
+
+    font-size: 2rem;
+    padding: 0.5em 2em;
+    border-radius: 0.5em;
+    background-color: white;
+    border: 1px solid black;
+    will-change: transform;
+
+    transition: background-color 0.25s, color 0.25s, scale, 0.25s, transform 0.25s;
+
+}
+
+.home-btn:hover {
+
+    cursor: pointer;
+    scale: 1.05;
+    transform: translateY(-5%);
+
+}
